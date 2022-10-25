@@ -22,10 +22,12 @@ while(num > 0)
 void PrintArray(int[] arr)
 {
     int count = arr.Length;
+    num = num + 1;
 
     for(int i = 0; i < count; i++)
     {
-        Console.Write($"{arr[i]} ");
+        Console.WriteLine(num + " ^ 2 = " + arr[i]);
+        num++;
     }
     Console.WriteLine();
 }
